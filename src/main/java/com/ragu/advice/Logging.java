@@ -28,7 +28,7 @@ public class Logging {
 		log.info("Method Invoked" + className + " : " + methodName + "()" + "arguments"
 				+ mapper.writeValueAsString(array));
 		return array;
-	}
+		}
 
 	@After("execution(* com.ragu.service.*.*(..))")
 	public void appLogger(JoinPoint pjp) throws Throwable {

@@ -78,7 +78,7 @@ class MokitoTest {
 	@Order(5)
 	public void test_deleteEmployee() {
 		Employee employ =new Employee(3,"ragu",30,"Java","Madurai");
-		when(emp.findById(employ.getEmp_id())).thenReturn(Optional.of(employ));
+		when(emp.findById(employ.getEmp_id())).thenReturn(Optional.of(employ)); 
 		assertEquals("EMPLOYEE GOT DELETED",empservice.delete(employ.getEmp_id()));
 	}
 }
