@@ -18,7 +18,7 @@ import org.springframework.http.ResponseEntity;
 
 import com.ragu.controller.Empcontroller;
 import com.ragu.entity.Employee;
-import com.ragu.service.EmpService;
+import com.ragu.service1.EmpService;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) 
 @SpringBootTest(classes= {ControllerTest.class})

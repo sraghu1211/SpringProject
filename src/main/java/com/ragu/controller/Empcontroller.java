@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ragu.entity.Employee;
-import com.ragu.service.EmpService;
+import com.ragu.service1.EmpService;
 
 import jakarta.validation.Valid;
 
@@ -24,7 +24,7 @@ import jakarta.validation.Valid;
 @RequestMapping("/empl")
 public class Empcontroller{
 	@Autowired
-	private EmpService empservice;
+	private com.ragu.service1.EmpService empservice;
 	
 
 

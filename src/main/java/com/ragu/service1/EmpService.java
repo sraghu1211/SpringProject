@@ -1,13 +1,15 @@
-package com.ragu.service;
+package com.ragu.service1;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.ragu.dao.EmpRepo;
 import com.ragu.entity.Employee;
 import com.ragu.exception.EmployeAlreadyExistException;
 import com.ragu.exception.NoSuchEmployeeExistException;
+
 @Service
 public class EmpService {
 @Autowired
@@ -35,7 +37,11 @@ public Employee getEmpById(int emp_id) {
 }
 
 public List<Employee> getEmps() {
-	return emp.findAll();
+//	if(emp.count()>1) { 
+//		  throw new NoSuchEmployeeExistException("NO DATA IS AVAILABLE IN DATABASE"); 
+//	  }
+//	 else {
+		  return emp.findAll();
 	}
 
 public String update(Employee employe) {
@@ -68,3 +74,4 @@ public String delete(int emp_id) {
 
 
 }
+ 

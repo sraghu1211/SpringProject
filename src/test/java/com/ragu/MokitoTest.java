@@ -21,7 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.ragu.dao.EmpRepo;
 import com.ragu.entity.Employee;
-import com.ragu.service.EmpService;
+import com.ragu.service1.EmpService;
 
 @RunWith(SpringRunner.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) 
