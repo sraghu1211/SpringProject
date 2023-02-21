@@ -9,8 +9,9 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
+
 @Entity
-@Table(name = "Employee")
+@Table
 public class Employee {
 
 @Column(name = "EMP_ID",nullable = false, length = 512, unique = true)
