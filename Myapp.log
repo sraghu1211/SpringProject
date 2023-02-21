@@ -19,3 +19,4 @@
 2023-02-21T14:31:38.514+05:30  INFO 3068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-02-21T14:31:38.898+05:30  WARN 3068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-02-21T14:31:39.832+05:30  INFO 3068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-21T14:31:39.840+05:30  INFO 3068 --- [main] com.ragu.Restapi1Application             : Started Restapi1Application in 5.108 seconds (process running for 5.849)
