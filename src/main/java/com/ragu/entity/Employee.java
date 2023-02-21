@@ -11,7 +11,7 @@ import jakarta.validation.constraints.Size;
 
 
 @Entity
-@Table
+
 public class Employee {
 
 
