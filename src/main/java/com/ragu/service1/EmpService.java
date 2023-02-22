@@ -37,12 +37,13 @@ public Employee getEmpById(int emp_id) {
 }
 
 public List<Employee> getEmps() {
-//	if(emp.count()>1) { 
-//		  throw new NoSuchEmployeeExistException("NO DATA IS AVAILABLE IN DATABASE"); 
-//	  }
-//	 else {
+	if(emp.count()>1) { 
+		  throw new NoSuchEmployeeExistException("NO DATA IS AVAILABLE IN DATABASE"); 
+	  }
+	 else {
 		  return emp.findAll();
 	}
+}
 
 public String update(Employee employe) {
 	Employee optionalemp=emp.findById(employe.getEmp_id()).orElse(null);
