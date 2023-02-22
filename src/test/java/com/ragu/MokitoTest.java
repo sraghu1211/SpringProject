@@ -49,7 +49,6 @@ class MokitoTest {
 	
 	
 	@Test
-	@Order(2)
 	public void test_addEmployee() {
 		Employee employee =new Employee(3,"Siva",30,"Java","Madurai");
 //		when(emp.save(employee)).thenReturn(employee);   //MOCKING
