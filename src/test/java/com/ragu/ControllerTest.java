@@ -55,7 +55,7 @@ public class ControllerTest {
 		when(empservice.getEmpById(emp_id)).thenReturn(employee);
 		ResponseEntity<Employee> res =empcontroller.getEmpById(emp_id);
 		assertEquals(HttpStatus.OK,res.getStatusCode());
-		assertEquals(emp_id,res.getBody().getEmp_id());
+		assertEquals(emp_id,res.getBody().getEmpid());
 	}
 	
 	@Order(3)

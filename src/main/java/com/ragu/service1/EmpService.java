@@ -16,7 +16,7 @@ public class EmpService {
 private EmpRepo emp;
 
 public String create(Employee employe) {
-	Employee existing = emp.findById(employe.getEmp_id()).orElse(null);
+	Employee existing = emp.findById(employe.getEmpid()).orElse(null);
 	if(existing == null) {
 		emp.save(employe);
 		return"RECORD CREATED";	
@@ -32,8 +32,8 @@ public String createemployees(List<Employee> employees) {
 	 return"All Record has been created";
 } 
 
-public Employee getEmpById(int emp_id) { 
-	 return emp.findById(emp_id).orElseThrow(()->new NoSuchEmployeeExistException("No such Employee present with id:"+emp_id));
+public Employee getEmpById(int empid) { 
+	 return emp.findById(empid).orElseThrow(()->new NoSuchEmployeeExistException("No such Employee present with id:"+empid));
 }
 
 public List<Employee> getEmps() {
@@ -46,12 +46,12 @@ public List<Employee> getEmps() {
 }
 
 public String update(Employee employe) {
-	Employee optionalemp=emp.findById(employe.getEmp_id()).orElse(null);
+	Employee optionalemp=emp.findById(employe.getEmpid()).orElse(null);
 	if(optionalemp!=null) {
 	optionalemp.setName(employe.getName());
 	optionalemp.setLocation(employe.getLocation());
 	optionalemp.setAge(employe.getAge());
-	optionalemp.setSkill_set(employe.getSkill_set());
+	optionalemp.setSkillset(employe.getSkillset());
 	emp.save(optionalemp);
 	return "RECORD HAS BEEN UPDATED";
 	}
@@ -60,10 +60,10 @@ public String update(Employee employe) {
 	}
 }
 
-public String delete(int emp_id) {
-	Employee exist=emp.findById(emp_id).orElse(null);
+public String delete(int empid) {
+	Employee exist=emp.findById(empid).orElse(null);
 	if(exist!=null) {
-		 emp.deleteById(emp_id);
+		 emp.deleteById(empid);
 		 return "Employee got deleted";
 	}
 	else {

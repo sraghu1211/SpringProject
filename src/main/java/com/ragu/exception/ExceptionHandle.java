@@ -33,22 +33,3 @@ public class ExceptionHandle {
 		return errors;
 	}
 }
-//	@ExceptionHandler(EmployeAlreadyExistException.class)
-//	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-//	public HashMap<String, String> handleBuisnessException(EmployeAlreadyExistException exception){
-//		HashMap<String, String> errors = new HashMap<>();
-//		 errors.put("errorMessage", exception.getMessage());
-//		 return errors;
-//		 }
-//    @ExceptionHandler(NoSuchEmployeeExistException.class)
-//	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-//    public HashMap<String, String> handleBuisnessException(NoSuchElementException exception){
-//    	HashMap<String, String> errors = new HashMap<>();
-//		 errors.put("errorMessage", exception.getMessage());
-//		 return errors;
-//    }
-//}
-//		 */
-		
-	
-

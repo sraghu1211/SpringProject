@@ -60,9 +60,9 @@ class MokitoTest {
 	@Order(3)
 	public void test_getEmployeeById() {
 		Employee myemployee =new Employee();
-		myemployee.setEmp_id(30);
-		when(emp.findById(myemployee.getEmp_id())).thenReturn(Optional.of(myemployee)); //MOCKING
-		Employee expected =empservice.getEmpById(myemployee.getEmp_id());
+		myemployee.setEmpid(30);
+		when(emp.findById(myemployee.getEmpid())).thenReturn(Optional.of(myemployee)); //MOCKING
+		Employee expected =empservice.getEmpById(myemployee.getEmpid());
 		assertThat(expected).isSameAs(myemployee);
       }
 	
@@ -78,8 +78,8 @@ class MokitoTest {
 	@Order(5)
 	void test_deleteEmployee() {
 		Employee employ =new Employee(3,"ragu",30,"Java","Madurai");
-		when(emp.findById(employ.getEmp_id())).thenReturn(Optional.of(employ)); 
-		assertEquals("EMPLOYEE GOT DELETED",empservice.delete(employ.getEmp_id()));
+		when(emp.findById(employ.getEmpid())).thenReturn(Optional.of(employ)); 
+		assertEquals("EMPLOYEE GOT DELETED",empservice.delete(employ.getEmpid()));
 	}
 }
 

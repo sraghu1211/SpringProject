@@ -24,7 +24,7 @@ import jakarta.validation.Valid;
 @RequestMapping("/empl")
 public class Empcontroller{
 	@Autowired
-	private com.ragu.service1.EmpService empservice;
+	private EmpService empservice;
 	
 
 
@@ -42,8 +42,8 @@ public class Empcontroller{
 	}
 
 	@GetMapping("/employee/{emp_id}")
-	public ResponseEntity<Employee> getEmpById(@PathVariable int emp_id) {
-		Employee singleemploye= empservice.getEmpById(emp_id);
+	public ResponseEntity<Employee> getEmpById(@PathVariable int empid) {
+		Employee singleemploye= empservice.getEmpById(empid);
 		return new ResponseEntity<Employee>(singleemploye,HttpStatus.OK); 
 	}
 
@@ -59,8 +59,8 @@ public class Empcontroller{
 	}
 
 	@DeleteMapping("/employee/{emp_id}")
-	public ResponseEntity<String> deleteEmp(@PathVariable int emp_id) {
-		empservice.delete(emp_id);
+	public ResponseEntity<String> deleteEmp(@PathVariable int empid) {
+		empservice.delete(empid);
 		return new ResponseEntity<String>("Employee has been deleted successfully!",HttpStatus.OK);
 	}
 	

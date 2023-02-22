@@ -30,11 +30,11 @@ class Restapi1ApplicationTests {
 	@Rollback(value=false) 
 	void postEmpTest() { 
 		Employee empo = new Employee(); 
-		empo.setEmp_id(20); 
+		empo.setEmpid(20); 
 		empo.setAge(21); 
 		empo.setName("Ragavendran");
 		empo.setLocation("Banglore");
-		empo.setSkill_set("Java"); 
+		empo.setSkillset("Java"); 
 		emp.save(empo);
 		assertNotNull(emp.findById(20).get());
 
@@ -44,7 +44,7 @@ class Restapi1ApplicationTests {
 	@Order(2) 
 	void getEmpTest() { 
 		Employee empo= emp.findById(20).get();
-		assertThat(empo.getEmp_id()).isEqualTo(20); 
+		assertThat(empo.getEmpid()).isEqualTo(20); 
 	}
 
 	@Test

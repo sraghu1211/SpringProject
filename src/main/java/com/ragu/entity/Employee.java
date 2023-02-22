@@ -16,19 +16,19 @@ public class Employee {
 
 @Column(name = "EMP_ID",nullable = false, length = 512, unique = true)
 @Id
-private int emp_id;
+private int empid;
 
 
-public int getEmp_id() {
-	return emp_id;
+public int getEmpid() {
+	return empid;
 }
 
 
 
 
 
-public void setEmp_id(int emp_id) {
-	this.emp_id = emp_id;
+public void setEmpid(int emp_id) {
+	this.empid = emp_id;
 }
 
 
@@ -43,7 +43,7 @@ private int age;
 @Column(name = "SKILL_SET", nullable = false)
 @Size(min = 2, message = "Skill_set should have atleast 2 characters")
 @Pattern(regexp =("[A-Za-z]*"),message = "Skill_set must be a alphabet")
-private String skill_set;
+private String skillset;
 
 
 @Column(name = "LOCATION", nullable = false)
@@ -62,10 +62,10 @@ public Employee() {
 
 public Employee(int emp_id,String name,int age,String skill_set,String location) {
 	super();
-	this.emp_id = emp_id;
+	this.empid = emp_id;
 	this.name = name;
 	this.age = age;
-	this.skill_set = skill_set;
+	this.skillset = skill_set;
 	this.location = location;
 }
 
@@ -98,13 +98,13 @@ public void setName(String name) {
 
 
 
-public String getSkill_set() {
-	return skill_set;
+public String getSkillset() {
+	return skillset;
 }
 
 
-public void setSkill_set(String skill_set) {
-	this.skill_set = skill_set;
+public void setSkillset(String skill_set) {
+	this.skillset = skill_set;
 }
 
 
