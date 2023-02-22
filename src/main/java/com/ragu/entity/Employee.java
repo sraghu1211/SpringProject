@@ -11,10 +11,10 @@ import jakarta.validation.constraints.Size;
 
 
 @Entity
-
+@Table
 public class Employee {
 
-
+@Column(name = "EMP_ID",nullable = false, length = 512, unique = true)
 @Id
 private int emp_id;
 
