@@ -27,7 +27,8 @@ class Restapi1ApplicationTests {
 
 	@Test
 	@Order(1)
-	@Rollback(value=false) public void postEmpTest() { 
+	@Rollback(value=false) 
+	void postEmpTest() { 
 		Employee empo = new Employee(); 
 		empo.setEmp_id(20); 
 		empo.setAge(21); 
@@ -41,14 +42,14 @@ class Restapi1ApplicationTests {
 
 	@Test
 	@Order(2) 
-	public void getEmpTest() { 
+	void getEmpTest() { 
 		Employee empo= emp.findById(20).get();
 		assertThat(empo.getEmp_id()).isEqualTo(20); 
 	}
 
 	@Test
 	@Order(3) 
-	public void getEmpTestAll () { 
+	void getEmpTestAll () { 
 		List<Employee> list=emp.findAll();
 		assertThat(list.size()).isGreaterThan(0); 
 	}
@@ -57,7 +58,7 @@ class Restapi1ApplicationTests {
 	@Test
 	@Order(4) 
 	@Rollback(value=false) 
-	public void updateEmpTest() { 
+	void updateEmpTest() { 
 		Employee empo =emp.findById(20).get(); 
 		empo.setAge(30); emp.save(empo); 
 		assertNotEquals(21,emp.findById(20).get().getAge()); 
@@ -67,7 +68,7 @@ class Restapi1ApplicationTests {
 	@Test
 	@Order(5)
 	@Rollback(value=false) 
-	public void deleteEmpTest() 
+	void deleteEmpTest() 
 	{
 		emp.deleteById(20);
 		assertThat(emp.existsById(20)).isFalse(); }

@@ -36,7 +36,7 @@ public class ControllerTest {
 	
 	@Test
 	@Order(1)
-	public void getAllEmployees() {
+	void getAllEmployees() {
 		myemployee=new ArrayList<Employee>();
 		myemployee.add(new Employee(1,"Raghunandhan",20,"Java","Chennai"));
 		myemployee.add(new Employee(2,"Banglore",30,"Nithin","Node_js"));
@@ -49,7 +49,7 @@ public class ControllerTest {
 	
 	@Order(2)
 	@Test
-	public void getEmployeById() {
+	void getEmployeById() {
 		employee=new Employee(3,"Azar",20,"Java","Chennai");
 		int emp_id=3;
 		when(empservice.getEmpById(emp_id)).thenReturn(employee);
@@ -60,7 +60,7 @@ public class ControllerTest {
 	
 	@Order(3)
 	@Test
-	public void createemployee() {
+	void createemployee() {
 		employee=new Employee(4,"Guru",20,"Ruby","Mysore");
 		when(empservice.create(employee)).thenReturn("RECORD CREATED");
 		ResponseEntity<String> res=empcontroller.addEmployee(employee);
@@ -72,7 +72,7 @@ public class ControllerTest {
 	
 	@Order(4)
 	@Test
-	public void createemployees() {
+	void createemployees() {
 		myemployee=new ArrayList<Employee>();
 	    myemployee.add(new Employee(5,"Arjun",21,"C#","Hyderabad"));
 		myemployee.add(new Employee(6,"Keerthi",22,".NET","Mumbai"));
@@ -85,7 +85,7 @@ public class ControllerTest {
 	
 	@Order(5)
 	@Test
-	public void updateEmployee() {
+	void updateEmployee() {
 		employee=new Employee(7,"Raghul",22,".NET","Mumbai");
 		employee=new Employee(7,"Rakesh",29,".NET","Mumbai");
 		when(empservice.update(employee)).thenReturn("RECORD HAS BEEN UPDATED");

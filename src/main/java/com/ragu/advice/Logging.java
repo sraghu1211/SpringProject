@@ -34,7 +34,7 @@ public class Logging {
 	public void appLogger(JoinPoint pjp) throws Throwable {
 		String methodName = pjp.getSignature().getName();
 		String className = pjp.getTarget().getClass().toString();
-		log.info("Finished Executing classname:{}" + className + " Methodname:{}" + methodName);
+		log.info("Finished Executing classname:{0}" + className + " Methodname:{1}" + methodName);
 	}
 
 }

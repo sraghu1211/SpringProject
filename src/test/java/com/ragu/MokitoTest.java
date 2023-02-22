@@ -39,7 +39,7 @@ class MokitoTest {
 
 	@Test 
 	@Order(1)
-	public void test_getallemployee() { 
+	void test_getallemployee() { 
 		List<Employee>myemployee=new ArrayList<Employee>();
 		myemployee.add(new Employee(1,"Raghunandhan",20,"Java","Chennai"));
 		myemployee.add(new Employee(2,"Banglore",30,"Nithin","Node_js"));
@@ -50,7 +50,7 @@ class MokitoTest {
 	
 	@Test
 	@Order(2)
-	public void test_addEmployee() {
+	void test_addEmployee() {
 		Employee employee =new Employee(3,"Siva",30,"Java","Madurai");
 //		when(emp.save(employee)).thenReturn(employee);   //MOCKING
 		assertEquals("RECORD CREATED", empservice.create(employee));
@@ -68,7 +68,7 @@ class MokitoTest {
 	
 	@Test
 	@Order(4)
-	public void test_updateEmployee() {
+	void test_updateEmployee() {
 		Employee employe =new Employee(3,"ragu",30,"Java","Madurai");
 		when(emp.save(employe)).thenReturn(employe);     //MOCKING
 		assertEquals("RECORD HAS BEEN UPDATED",empservice.update(employe));
@@ -76,7 +76,7 @@ class MokitoTest {
 	
 	@Test
 	@Order(5)
-	public void test_deleteEmployee() {
+	void test_deleteEmployee() {
 		Employee employ =new Employee(3,"ragu",30,"Java","Madurai");
 		when(emp.findById(employ.getEmp_id())).thenReturn(Optional.of(employ)); 
 		assertEquals("EMPLOYEE GOT DELETED",empservice.delete(employ.getEmp_id()));
