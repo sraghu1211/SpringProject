@@ -22,7 +22,7 @@ public String create(Employee employe) {
 		return"RECORD CREATED";	
 	}
 	else
-		throw new EmployeAlreadyExistException("");
+		throw new EmployeAlreadyExistException("Data Already exist");
 }
 	
 
@@ -55,7 +55,7 @@ public String update(Employee employe) {
 	return "RECORD HAS BEEN UPDATED";
 	}
 	else {
-		throw new NoSuchEmployeeExistException("");
+		throw new NoSuchEmployeeExistException("EMPLOYEE NOT EXIST");
 	}
 }
 
