@@ -1,6 +1,1 @@
 2023-02-22T10:31:31.305+05:30  WARN 3068 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h29m20s975ms430µs100ns).
-2023-02-22T12:35:44.976+05:30  INFO 3068 --- [RMI TCP Connection(338)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-02-22T12:35:45.261+05:30  INFO 3068 --- [RMI TCP Connection(338)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-02-22T12:35:45.368+05:30  INFO 3068 --- [RMI TCP Connection(338)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-02-22T12:35:45.415+05:30  INFO 3068 --- [RMI TCP Connection(338)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-22T12:35:45.436+05:30  INFO 3068 --- [RMI TCP Connection(338)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

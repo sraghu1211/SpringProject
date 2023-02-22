@@ -37,7 +37,15 @@ class MokitoTest {
 	
 	public Employee myemployee;
 
-	
+	@Test 
+	@Order(1)
+	public void test_getallemployee() { 
+		List<Employee>myemployee=new ArrayList<Employee>();
+		myemployee.add(new Employee(1,"Raghunandhan",20,"Java","Chennai"));
+		myemployee.add(new Employee(2,"Banglore",30,"Nithin","Node_js"));
+		when(emp.findAll()).thenReturn(myemployee);     //MOCKING
+		assertEquals(2,empservice.getEmps().size());	
+	}
 	
 	
 	@Test
