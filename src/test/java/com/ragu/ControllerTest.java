@@ -22,7 +22,7 @@ import com.ragu.service1.EmpService;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) 
 @SpringBootTest(classes= {ControllerTest.class})
-public class ControllerTest {
+class ControllerTest {
 	
 	@Mock
 	EmpService empservice;

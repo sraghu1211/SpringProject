@@ -115,3 +115,4 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-02-23T08:17:03.203+05:30  INFO 65964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-02-23T08:17:03.715+05:30  WARN 65964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-02-23T08:17:05.058+05:30  INFO 65964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-23T08:17:05.069+05:30  INFO 65964 --- [main] com.ragu.Restapi1Application             : Started Restapi1Application in 6.501 seconds (process running for 7.449)

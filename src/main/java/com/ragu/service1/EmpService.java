@@ -60,10 +60,10 @@ public String update(Employee employe) {
 	}
 }
 
-public String delete(int empid) {
-	Employee exist=emp.findById(empid).orElse(null);
+public String delete(int empId) {
+	Employee exist=emp.findById(empId).orElse(null);
 	if(exist!=null) {
-		 emp.deleteById(empid);
+		 emp.deleteById(empId);
 		 return "Employee got deleted";
 	}
 	else {

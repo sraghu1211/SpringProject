@@ -58,7 +58,7 @@ class MokitoTest {
 	
 	@Test
 	@Order(3)
-	public void test_getEmployeeById() {
+	void test_getEmployeeById() {
 		Employee myemployee =new Employee();
 		myemployee.setEmpid(30);
 		when(emp.findById(myemployee.getEmpid())).thenReturn(Optional.of(myemployee)); //MOCKING
