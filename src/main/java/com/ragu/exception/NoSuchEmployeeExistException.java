@@ -10,7 +10,10 @@ public class NoSuchEmployeeExistException extends RuntimeException {
 		super(errorMessage);
 		this.errorMessage = errorMessage;
 	}
-
+	public String getErrorMessage()
+	{
+		return errorMessage;
+	}
 
 	
 }

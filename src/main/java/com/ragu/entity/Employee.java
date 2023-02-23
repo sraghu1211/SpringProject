@@ -27,8 +27,8 @@ public int getEmpid() {
 
 
 
-public void setEmpid(int emp_id) {
-	this.empid = emp_id;
+public void setEmpid(int empid) {
+	this.empid = empid;
 }
 
 
@@ -60,9 +60,9 @@ public Employee() {
 
 
 
-public Employee(int emp_id,String name,int age,String skill_set,String location) {
+public Employee(int empid,String name,int age,String skill_set,String location) {
 	super();
-	this.empid = emp_id;
+	this.empid = empid;
 	this.name = name;
 	this.age = age;
 	this.skillset = skill_set;
@@ -103,8 +103,8 @@ public String getSkillset() {
 }
 
 
-public void setSkillset(String skill_set) {
-	this.skillset = skill_set;
+public void setSkillset(String skillset) {
+	this.skillset = skillset;
 }
 
 
