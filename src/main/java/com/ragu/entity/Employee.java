@@ -60,12 +60,12 @@ public Employee() {
 
 
 
-public Employee(int empid,String name,int age,String skill_set,String location) {
+public Employee(int empid,String name,int age,String skillset,String location) {
 	super();
 	this.empid = empid;
 	this.name = name;
 	this.age = age;
-	this.skillset = skill_set;
+	this.skillset = skillset;
 	this.location = location;
 }
 
