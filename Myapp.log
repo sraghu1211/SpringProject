@@ -158,3 +158,31 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-02-23T08:46:41.363+05:30  INFO 66000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-02-23T08:46:41.717+05:30  INFO 66000 --- [main] com.ragu.Restapi1ApplicationTests        : Started Restapi1ApplicationTests in 2.969 seconds (process running for 4.067)
 2023-02-23T08:46:42.481+05:30  INFO 66000 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23T10:45:39.031+05:30  WARN 65964 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h34m6s668ms122µs).
+2023-02-23T11:07:12.372+05:30  INFO 65964 --- [RMI TCP Connection(81)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-02-23T11:07:12.431+05:30  INFO 65964 --- [RMI TCP Connection(81)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-23T11:07:12.451+05:30  INFO 65964 --- [RMI TCP Connection(81)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23T11:07:12.462+05:30  INFO 65964 --- [RMI TCP Connection(81)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-23T11:07:12.466+05:30  INFO 65964 --- [RMI TCP Connection(81)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-23T11:07:21.593+05:30  INFO 73312 --- [main] com.ragu.Restapi1Application             : Starting Restapi1Application using Java 17.0.5 with PID 73312 (C:\Users\raghunandhan.s\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\RESTAPI-1\target\classes started by raghunandhan.s in C:\Users\raghunandhan.s\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\RESTAPI-1)
+2023-02-23T11:07:21.596+05:30  INFO 73312 --- [main] com.ragu.Restapi1Application             : No active profile set, falling back to 1 default profile: "default"
+2023-02-23T11:07:22.423+05:30  INFO 73312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23T11:07:22.497+05:30  INFO 73312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2023-02-23T11:07:23.456+05:30  INFO 73312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-23T11:07:23.468+05:30  INFO 73312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-23T11:07:23.469+05:30  INFO 73312 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-23T11:07:23.588+05:30  INFO 73312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-23T11:07:23.590+05:30  INFO 73312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1932 ms
+2023-02-23T11:07:23.641+05:30  INFO 73312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-23T11:07:23.882+05:30  INFO 73312 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:raghu user=RAGU
+2023-02-23T11:07:23.886+05:30  INFO 73312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-23T11:07:23.910+05:30  INFO 73312 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:raghu'
+2023-02-23T11:07:24.065+05:30  INFO 73312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-23T11:07:24.140+05:30  INFO 73312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-23T11:07:24.408+05:30  WARN 73312 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-23T11:07:24.565+05:30  INFO 73312 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-02-23T11:07:25.627+05:30  INFO 73312 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-23T11:07:25.646+05:30  INFO 73312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23T11:07:26.322+05:30  WARN 73312 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-23T11:07:27.727+05:30  INFO 73312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-23T11:07:27.740+05:30  INFO 73312 --- [main] com.ragu.Restapi1Application             : Started Restapi1Application in 6.65 seconds (process running for 7.652)

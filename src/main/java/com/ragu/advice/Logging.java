@@ -30,7 +30,7 @@ public class Logging {
 		}
 
 	@After("execution(* com.ragu.service.*.*(..))")
-	public void appLogger(JoinPoint pjp) throws Throwable {
+	public void appLogger(JoinPoint pjp){
 		String methodName = pjp.getSignature().getName();
 		String className = pjp.getTarget().getClass().toString();
 		log.info("Finished Executing classname:{} Methodname:{}",className , methodName);
