@@ -95,7 +95,7 @@ class ControllerTest {
 	
 	@Order(6)
 	@Test
-	public void deleteEmployee() {
+	void deleteEmployee() {
 		employee=new Employee(7,"Raghul",22,".NET","Mumbai");
 		int emp_id=7;
 		when(empservice.delete(emp_id)).thenReturn("Employee has been deleted successfully!");
