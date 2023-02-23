@@ -25,8 +25,7 @@ public class Logging {
 		String methodName = pjp.getSignature().getName();
 		String className = pjp.getTarget().getClass().toString();
 		Object[] array = pjp.getArgs();
-		log.info("Method Invoked" + className + " : " + methodName + "()" + "arguments"
-				+ mapper.writeValueAsString(array));
+		log.info("Method Invoked {0}  : {1}  arguments {2}",className, methodName, mapper.writeValueAsString(array));
 		return array;
 		}
 
@@ -34,7 +33,7 @@ public class Logging {
 	public void appLogger(JoinPoint pjp) throws Throwable {
 		String methodName = pjp.getSignature().getName();
 		String className = pjp.getTarget().getClass().toString();
-		log.info("Finished Executing classname:{0}" + className + " Methodname:{1}" + methodName);
+		log.info("Finished Executing classname:{0} Methodname:{1}",className , methodName);
 	}
 
 }
