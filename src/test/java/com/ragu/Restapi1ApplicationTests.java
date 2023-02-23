@@ -51,7 +51,9 @@ class Restapi1ApplicationTests {
 	@Order(3) 
 	void getEmpTestAll () { 
 		List<Employee> list=emp.findAll();
-		assertThat(list.size()).isPositive(); 
+		assertThat(list).isNotEmpty();
+
+ 
 	}
 
 
