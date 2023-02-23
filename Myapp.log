@@ -18,3 +18,5 @@
 2023-02-23T07:49:10.730+05:30  INFO 64088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-02-23T07:49:10.743+05:30  INFO 64088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-02-23T07:49:11.360+05:30  WARN 64088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-23T07:49:12.539+05:30  INFO 64088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-23T07:49:12.556+05:30  INFO 64088 --- [main] com.ragu.Restapi1Application             : Started Restapi1Application in 6.747 seconds (process running for 8.265)

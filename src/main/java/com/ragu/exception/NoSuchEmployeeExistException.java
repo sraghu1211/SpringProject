@@ -1,10 +1,9 @@
 package com.ragu.exception;
 
 public class NoSuchEmployeeExistException extends RuntimeException {
-	private String errorMessage;
+	private final String errorMessage;
 
-	public NoSuchEmployeeExistException() {
-}
+	
 
 	public NoSuchEmployeeExistException(String errorMessage) {
 		super(errorMessage);
