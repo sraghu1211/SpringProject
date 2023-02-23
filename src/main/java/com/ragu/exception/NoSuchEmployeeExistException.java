@@ -2,7 +2,7 @@ package com.ragu.exception;
 
 public class NoSuchEmployeeExistException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
-	private String errorMessage;
+	private final String errorMessage;
 
 	
 
