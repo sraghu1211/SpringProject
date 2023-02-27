@@ -29,7 +29,7 @@ public String create(Employee employe) {
 
 public String createemployees(List<Employee> employees) {
 	 emp.saveAll(employees);
-	 return"All Record has been created";
+	 return"";
 } 
 
 public Employee getEmpById(int empid) { 
@@ -51,7 +51,11 @@ public String update(Employee employe) {
 	optionalemp.setName(employe.getName());
 	optionalemp.setLocation(employe.getLocation());
 	optionalemp.setAge(employe.getAge());
+<<<<<<< HEAD
 	optionalemp.setSkillset(employe.getSkillset());
+=======
+	optionalemp.setSkill_set(employe.getSkillset());
+>>>>>>> demo1
 	emp.save(optionalemp);
 	return "RECORD";
 	}
