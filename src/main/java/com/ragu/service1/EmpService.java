@@ -16,7 +16,7 @@ public class EmpService {
 private EmpRepo emp;
 
 public String create(Employee employe) {
-	Employee existing = emp.findById(employe.getEmp_id()).orElse(null);
+	Employee existing = emp.findById(employe.getEmpid()).orElse(null);
 	if(existing == null) {
 		emp.save(employe);
 		return"RECORD CREATED";	
@@ -29,7 +29,7 @@ public String create(Employee employe) {
 
 public String createemployees(List<Employee> employees) {
 	 emp.saveAll(employees);
-	 return"All Record has been created";
+	 return"";
 } 
 
 public Employee getEmpById(int emp_id) { 
@@ -45,12 +45,12 @@ public List<Employee> getEmps() {
 	}
 
 public String update(Employee employe) {
-	Employee optionalemp=emp.findById(employe.getEmp_id()).orElse(null);
+	Employee optionalemp=emp.findById(employe.getEmpid()).orElse(null);
 	if(optionalemp!=null) {
 	optionalemp.setName(employe.getName());
 	optionalemp.setLocation(employe.getLocation());
 	optionalemp.setAge(employe.getAge());
-	optionalemp.setSkill_set(employe.getSkill_set());
+	optionalemp.setSkill_set(employe.getSkillset());
 	emp.save(optionalemp);
 	return "RECORD HAS BEEN UPDATED";
 	}
