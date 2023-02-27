@@ -53,7 +53,7 @@ public String update(Employee employe) {
 	optionalemp.setAge(employe.getAge());
 	optionalemp.setSkillset(employe.getSkillset());
 	emp.save(optionalemp);
-	return "RECORD HAS BEEN UPDATED";
+	return "RECORD";
 	}
 	else {
 		throw new NoSuchEmployeeExistException("EMPLOYEE NOT EXIST");
