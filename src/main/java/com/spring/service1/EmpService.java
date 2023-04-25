@@ -34,7 +34,7 @@ public class EmpService {
 	@Cacheable(cacheNames = "users", key = "#emp_id")
 	public Employee getEmpById(int emp_id) {
 		return emp.findById(emp_id)
-				.orElseThrow(() -> new NoSuchEmployeeExistException("No such Employee present with id:" + emp_id));
+				.orElseThrow(() -> new NoSuchEmployeeExistException("No such Employee:" + emp_id));
 	}
 
 	public List<Employee> getEmps() {
